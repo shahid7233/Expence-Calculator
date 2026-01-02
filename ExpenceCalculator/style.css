@@ -1,0 +1,46 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form {
+  display: grid;
+  place-items: center;
+  margin-top: 30px;
+}
+#main_total {
+  display: flex;
+}
+table {
+}
+tr {
+  margin: 30px;
+  color: blueviolet;
+}
+td {
+}
+p {
+  color: blueviolet;
+}
+
+.total{
+    color:rgb(26, 221, 15);
+}
+
+.del {
+  background-color: white;
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  border: transparent;
+}
+.edit {
+  background-color: white;
+  color: rgb(26, 221, 15);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  border: transparent;
+}
+
+.edit :hover {
+  background-color: red;
+  color: white;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900 min-h-screen flex items-center justify-center p-5">
+
+  <div class="w-full max-w-4xl bg-slate-800 rounded-2xl shadow-2xl p-8">
+
+    <h1 class="text-4xl font-bold text-center text-white mb-8">
+      Expense Tracker
+    </h1>
+
+    <form class="grid md:grid-cols-4 gap-4 mb-8">
+
+      <input
+        type="text"
+        id="select"
+        placeholder="Enter Item"
+        class="bg-slate-700 text-white px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-cyan-400"
+      />
+
+      <input
+        type="text"
+        id="inpute"
+        placeholder="Enter Amount"
+        class="bg-slate-700 text-white px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-cyan-400"
+      />
+
+      <input
+        type="date"
+        id="date"
+        class="bg-slate-700 text-white px-4 py-3 rounded-xl outline-none focus:ring-2 focus:ring-cyan-400"
+      />
+
+      <input
+        type="submit"
+        id="submit"
+        value="Add Expense"
+        class="bg-cyan-500 hover:bg-cyan-600 transition duration-300 text-white font-semibold rounded-xl cursor-pointer"
+      />
+
+    </form>
+
+    <div class="overflow-x-auto">
+
+      <table class="w-full border-collapse overflow-hidden rounded-xl">
+
+        <thead>
+          <tr class="bg-cyan-500 text-white">
+            <th class="p-4 text-left">Category</th>
+            <th class="p-4 text-left">Amount</th>
+            <th class="p-4 text-left">Date</th>
+            <th class="p-4 text-left">Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="table" class="bg-slate-700 text-white">
+
+          <!-- Dynamic rows -->
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+    <div class="flex justify-end items-center gap-3 mt-8">
+
+      <p class="text-2xl text-white font-semibold">
+        Total:
+      </p>
+
+      <p class="text-3xl font-bold text-cyan-400 total">
+        ₹0
+      </p>
+
+    </div>
+
+  </div>
+
+  <script src="js.js"></script>
+
+</body>
+
+</html>
